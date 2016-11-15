@@ -1,5 +1,7 @@
 # README.md
 
+add the path to {/ndk/root/folder} and {/android/sdk/root/folder}/platform-tools to the $PATH environment variable
+
 $ ndk-build APP_ABI=armeabi-v7a
 [armeabi-v7a] Compile++ thumb: test-boost <= test.cpp
 [armeabi-v7a] Compile++ thumb: test-boost <= gps.cpp
