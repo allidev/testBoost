@@ -1,6 +1,8 @@
 // test.cpp
 #include <iostream>
 #include <iomanip>
+#include <string>
+#include <boost/filesystem.hpp>
 #include "gps.hpp"
 
 int main()
@@ -22,5 +24,10 @@ int main()
     }
 
     std::cout << "Congratulations! GPS object was successfully saved and then loaded" << std::endl;
+    boost::filesystem::path tmp = "/root/test";
+    boost::filesystem::path fname = "sample";
+    tmp /= fname;
+    std::cout << "The test for using boost::filesystem::path is " << std::endl;
+    std::cout << tmp.string().c_str() << std::endl;
     return 0;
 }
